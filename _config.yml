@@ -3,5 +3,4 @@ plugins:
 - jekyll-remote-theme
 title: [New User Checklist]
 description: [Follow this guide to set up a new user.]
-baseurl: "/myproject"
 theme: jekyll-theme-cayman
