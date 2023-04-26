@@ -1,19 +1,30 @@
 ---
 layout: default
 ---
-
+<html>
+  <head>
+    <link rel="stylesheet" href="/assets/css/style.scss">
+    <script src="js/selectUser.js" type="text/javascript"></script>
+    <script src="js/showUser.js" type="text/javascript"></script>
+  </head>
 <body>
-    <p>new test.</p>
+    <p>Select the type of user:</p>
 
     <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <button onclick="dropDownSelector()" class="dropbtn">Type</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="javascript:;" onclick="showUser()" class="admin">Admin</a>
+          <a href="#">Designer</a>
+          <a href="#">Architect</a>
+          <a href="#">Landscape Architect</a>
         </div>
       </div>
 
-      
+    <div id = "adminBlock" style="display: none;">
+      <p>test div element</p>
+    </div>
+
+
 </body>
 
+</html>
