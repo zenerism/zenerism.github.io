@@ -1,6 +1,8 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
+- jekyll-include-cache
+- jekyll-feed
 title: [New User Checklist]
 description: [Follow this guide to set up a new user.]
 theme: jekyll-theme-cayman
