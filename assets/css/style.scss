@@ -4,6 +4,10 @@
 @import "{{ site.theme }}";
 body{
 
+.hideable {
+  display:none;
+}
+
 .dropbtn {
     background-color: #3498DB;
     color: white;

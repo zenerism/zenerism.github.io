@@ -4,24 +4,36 @@ layout: default
 <html>
   <head>
     <link rel="stylesheet" href="/assets/css/style.scss">
-    <script src="js/selectUser.js" type="text/javascript"></script>
+    <script src="js/dropDownFunction.js" type="text/javascript"></script>
     <script src="js/showUser.js" type="text/javascript"></script>
   </head>
+
 <body>
     <p>Select the type of user:</p>
 
     <div class="dropdown">
         <button onclick="dropDownSelector()" class="dropbtn">Type</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="javascript:;" onclick="showUser()" class="admin">Admin</a>
-          <a href="#">Designer</a>
-          <a href="#">Architect</a>
-          <a href="#">Landscape Architect</a>
+          <a href="javascript:;" onclick="toggleUser('adminBlock')">Admin</a>
+          <a href="javascript:;" onclick="toggleUser('designerBlock')">Designer</a>
+          <a href="javascript:;" onclick="toggleUser('architectBlock')">Architect</a>
+          <a href="javascript:;" onclick="toggleUser('landscapeBlock')">Landscape Architect</a>
         </div>
       </div>
 
-    <div id = "adminBlock" style="display: none;">
-      <p>test div element</p>
+    <div>  
+      <div class="hideable" id = "adminBlock">
+        <p>test admin element</p>
+      </div>
+      <div class="hideable" id = "designerBlock">
+        <p>test designer element</p>
+      </div>
+      <div class="hideable" id = "architectBlock">
+        <p>test architect element</p>
+      </div>
+      <div class="hideable" id = "landscapeBlock">
+        <p>test Landscape Architect element</p>
+      </div>
     </div>
 
 

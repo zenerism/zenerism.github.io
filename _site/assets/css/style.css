@@ -322,6 +322,7 @@ a:hover { text-decoration: underline; }
 
 .site-footer-credits { color: #819198; }
 
+body .hideable { display: none; }
 body .dropbtn { background-color: #3498DB; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer; }
 body .dropbtn:hover, body .dropbtn:focus { background-color: #2980B9; }
 body .dropdown { position: relative; display: inline-block; }

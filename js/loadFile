@@ -1,0 +1,3 @@
+function loadUser(id) {
+    document.getElementById(id).innerHTML='<object type="text/html" data="admin.html" ></object>';
+}
